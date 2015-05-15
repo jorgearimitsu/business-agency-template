@@ -1,0 +1,79 @@
+// ==================================================
+// Bussiness Agency Theme
+// --------------------------------------------------
+//  @project Business Agency Theme
+//  @version 1.0
+//  @author Jorge Arimitsu
+// ==================================================
+/*
+*  This file is licensed under the 
+*  Creative Creative Commons Attribution 4.0 License 
+*  http://creativecommons.org/licenses/by/4.0/
+*/
+// ==================================================
+//    Table of contents
+// --------------------------------------------------
+//   - @section variables
+// --------------------------------------------------
+//   - @partial reset
+// --------------------------------------------------
+//   - @partial components
+//     - @section layout
+//     - @section typography
+//     - @section navigation
+//     - @section buttons
+//     - @section form
+//     - @section header
+//     - @section box
+//     - @section arrow up box
+//     - @section helpers
+// --------------------------------------------------
+//   - @partial style
+//     - @section header
+//     - @section bussiness agency
+//     - @section banner
+//     - @section about us
+//     - @section our approach
+//     - @section our work
+//     - @section facebook analysis
+//     - @section get in touch
+//     - @section footer
+// ==================================================
+
+
+// --------------------------------------------------
+// @section variables
+// --------------------------------------------------
+
+// colors
+$blue_sky: #09c;
+$carbon: #333; 
+$dark_gray: #666;
+$gold: #fc6;
+$gray: #999;
+$light_gray: #ccc;
+$red_tomato: #f00;
+$salmon: #f66;
+$white: #fff;
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @partial reset
+// --------------------------------------------------
+@import "reset";
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @partial components
+// --------------------------------------------------
+@import "components";
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @partial style
+// --------------------------------------------------
+@import "style";
+// --------------------------------------------------

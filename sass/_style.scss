@@ -1,0 +1,408 @@
+// ==================================================
+// @partial style
+// --------------------------------------------------
+// This partial describes the styles of the page
+// --------------------------------------------------
+/*
+*  This file is licensed under the 
+*  Creative Creative Commons Attribution 4.0 License 
+*  http://creativecommons.org/licenses/by/4.0/
+*/
+// ==================================================
+//    Table of contents
+// --------------------------------------------------
+//   - @section header
+// --------------------------------------------------
+//   - @section bussiness agency
+// --------------------------------------------------
+//   - @section banner
+// --------------------------------------------------
+//   - @section about us
+// --------------------------------------------------
+//   - @section our approach
+// --------------------------------------------------
+//   - @section our work
+// --------------------------------------------------
+//   - @section facebook analysis
+// --------------------------------------------------
+//   - @section get in touch
+// --------------------------------------------------
+//   - @section footer
+// ==================================================
+
+
+// --------------------------------------------------
+// @section header
+// --------------------------------------------------
+header[role=banner] { 
+  text-align: right;
+  
+  .container {
+    height: 130px;
+    line-height: 130px;
+  }
+
+  h1 {
+    float: left;
+
+    img { 
+      height: 50px;
+      vertical-align: middle; 
+      width: 244px;
+    }
+
+    span { display: none; }
+  }
+
+  a[role=button],
+  nav[role=navigation] { line-height: 1; }
+
+  nav[role=navigation] {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+  }
+
+  a[role=button] { padding: 12px 22px; }
+}
+
+.contact-info { 
+  background-color: $light_gray;
+  box-shadow: 0 1px 1px $gray;
+  color: $white;
+  font-size: .75em;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+
+  ul {
+    margin: 0 auto;
+    width: 1024px;
+  }
+  
+  li { 
+    display: inline-block; 
+    margin-right: 10px;
+
+    i { margin-right: 5px; }
+  }
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section business agency 
+// --------------------------------------------------
+#business-agency > h2 { display: none; }
+
+#business-agency > section, 
+#business-agency > article { padding: 100px 0; }
+// ------------------------------
+
+
+// --------------------------------------------------
+// @section banner
+// --------------------------------------------------
+#banner {
+  background: url("img/banner.jpg") center no-repeat;
+  color: $white;
+  height: 589px;
+  position: relative;
+
+  a[role=button] {
+    background-color: $gold;
+    font-size: 1.5em;
+    padding: 15px 35px;
+  }
+}
+
+.banner-text {
+  bottom: 0;
+  height: 189px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  h2 { 
+    font-size: 3em; // 48px / 16px
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    
+    span {
+      font-size: 0.625em; // 30px / 48px
+      font-weight: 300;
+    }
+  }
+}
+// --------------------------------------------------
+
+// --------------------------------------------------
+// @section about us
+// --------------------------------------------------
+#about-us {
+  h2, p { color: $carbon; }
+  
+  hr { background-color: $carbon; }
+
+  section {
+    display: inline-block;
+    margin-right: 100px;
+    width: 238px;
+
+    h3 { margin-bottom: 10px; }
+  }
+}
+
+.service-icon {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.i-facebook {
+  @extend .service-icon;
+  background: url(img/facebook-icon) no-repeat;
+  height: 79px;
+  width: 83px;
+}
+
+.i-landing-page {
+  @extend .service-icon;
+  background: url(img/landing-page-icon) no-repeat;
+  height: 79px;
+  width: 66px;
+}
+
+.i-ads {
+  @extend .service-icon;
+  background: url(img/ads-icon) no-repeat;
+  height: 81px;
+  width: 84px;
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section our approach
+// --------------------------------------------------
+#our-approach { background-color: $light_gray; }
+
+.step1 { background-image: url("img/step-1.jpg"); }
+.step2 { background-image: url("img/step-2.jpg"); }
+.step3 { background-image: url("img/step-3.jpg"); }
+.step4 { background-image: url("img/step-4.jpg"); }
+
+.step1,
+.step2,
+.step3,
+.step4 {
+  @extend .box;
+  background-color: $white;
+  background-repeat: no-repeat;
+  height: 236px;
+  margin-bottom: 40px;
+  text-align: right; 
+}
+
+.step1,
+.step3 { 
+  text-align: right; 
+
+  .step-text { text-align: left; }
+
+  .step-stamp { left: -50px; }
+}
+
+.step2,
+.step4 {
+  text-align: left;
+  background-position: right;
+
+  .step-text { text-align: right; }
+
+  .step-stamp { right: -50px; }
+}
+
+.step-text {
+  display: inline-block;
+  padding: 75px 90px;
+  position: relative;
+  width: 684px;    
+
+  h3 { 
+    font-size: 1.125em; // 18px / 16px
+    margin-bottom: 8px;
+  }
+}
+
+.step-stamp {
+  background-color: $red_tomato;
+  border: 2px solid $white;
+  border-radius: 3px;
+  color: $white;
+  font-size: 1.25em; // 20px / 16px
+  height: 100px;
+  line-height: 1;
+  margin-top: -50px;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100px;
+  
+  span {
+    font: bold 3em "Georgia", serif; // 60px / 20px
+  }
+}
+// --------------------------------------------------
+
+
+
+// --------------------------------------------------
+// @section our work
+// --------------------------------------------------
+#our-work {
+  background-color: $red_tomato; 
+  color: $white;
+  overflow: hidden;
+
+  section {
+    background-color: $salmon;
+    height: 253px;
+    line-height: 253px;
+    width: 50%;
+
+    img {
+      height: 253px;
+      width: 255px;
+    }
+  }
+}
+
+.project-text { 
+  display: inline-block;
+  font-size: 16px; 
+  line-height: normal;
+  vertical-align: middle;
+
+  i { 
+    filter: alpha(opacity=50);
+    font-size: 2.25em; // 36px / 16px
+    opacity: 0.5;
+  }
+
+  h3 { 
+    font-size:  1.625em; // 26px / 16px
+    font-weight: 400;
+    text-transform: capitalize;
+  } 
+
+  p { 
+    color: $white;
+    font-size: 1em;
+  } 
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section facebook analysis
+// --------------------------------------------------
+#facebook-analysis {
+  background-color: $blue_sky;
+  color: $white;
+
+  header { margin-bottom: 10px; }
+
+  form {
+    color: $gray;
+    display: none;
+    margin: 50px auto 0;
+    padding: 50px;
+    width: 680px;
+
+    p { 
+      font-size: .9375em;
+      margin-bottom: 40px; 
+    }
+
+    input { 
+      border: 1px solid #d8d8d8; 
+      height: 50px;
+      margin-bottom: 10px;
+      width: 440px;
+    }
+
+    button { 
+      margin-top: 30px;
+      padding: 15px 30px; 
+    }
+  }
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section get in touch
+// --------------------------------------------------
+#get-in-touch {
+  background-color: $carbon;
+  color: $white;
+
+  h3 { 
+    font-size: 1.875em; // 30px / 16px
+    margin-bottom: 20px; 
+  }
+  
+  button,
+  .social-icon {
+    &:hover { border: 2px solid $red_tomato; }
+  }
+  .social-icon {
+    background-color: transparent;
+    border: 2px solid $dark_gray;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1.4375em; // 23px / 16px
+    height: 49px;
+    line-height: 45px;
+    margin-right: 20px;
+    width: 49px;
+  }
+  
+  p {
+    color: $light_gray;
+    font-size: .875em; // 14px / 16px
+    margin: 20px 0;
+  }
+  
+  input {
+    background-color: $dark_gray; 
+    border: none;
+    height: 50px;
+    width: 680px;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid $dark_gray;
+    margin-top: 20px;
+    padding: 15px 30px;
+  }
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section footer
+// --------------------------------------------------
+footer[role=contentinfo] {
+  background-color: $dark_gray;
+  height: 50px;
+  line-height: 50px;
+
+  p { color: $light_gray; }
+}
+// --------------------------------------------------

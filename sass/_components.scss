@@ -1,0 +1,250 @@
+// ==================================================
+// @partial components
+// --------------------------------------------------
+// This partial describes the default styles and
+// components of the page
+// ==================================================
+/*
+*  This file is licensed under the 
+*  Creative Creative Commons Attribution 4.0 License 
+*  http://creativecommons.org/licenses/by/4.0/
+*/
+// ==================================================
+//    Table of contents
+// --------------------------------------------------
+//   - @section layout
+// --------------------------------------------------
+//   - @section typography
+// --------------------------------------------------
+//   - @section navigation
+// --------------------------------------------------
+//   - @section buttons
+// --------------------------------------------------
+//   - @section form
+// --------------------------------------------------
+//   - @section header
+// --------------------------------------------------
+//   - @section box
+// --------------------------------------------------
+//   - @section arrow up box
+// --------------------------------------------------
+//   - @section helpers
+// ==================================================
+
+
+// --------------------------------------------------
+// @section layout
+// --------------------------------------------------
+body { min-width: 1024px; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 1024px;
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section typography
+// --------------------------------------------------
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+h2 { font-size: 2.25em; }// 36px / 16px
+
+h3 { font-size: 1.125em; } // 18px / 16px
+
+p { 
+  color: $dark_gray;
+  font-size: .8125em; // 13px / 16px
+} 
+
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section navigation
+// --------------------------------------------------
+ul[role=menu] { 
+  display: inline-block;
+  overflow: hidden; 
+}
+
+li[role=menuitem] { 
+  float: left; 
+  margin-right: 40px;
+}
+
+li[role=menuitem] a {
+  color: $carbon;
+  font-style: .9375em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover { color: $red_tomato; }
+}
+
+a { color: inherit; }
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section buttons
+// --------------------------------------------------
+button,
+a[role=button] {
+  background-color: $red_tomato;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  font: 1em "Open Sans", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a[role=button].arrow-down-btn,
+a[role=button].close-btn {
+  border-radius: 50%;
+  color: $white;
+  display: inline-block; 
+}
+
+a[role=button].arrow-down-btn {
+  background-color: transparent;
+  border: 3px solid $white;
+  height: 66px;
+  font-size: 2.5em; // 40px / 16px
+  line-height: 60px;
+  width: 66px;
+}
+
+a[role=button].close-btn {
+  border: 2px solid $white;
+  height: 44px;
+  line-height: 40px;
+  margin: -22px -22px 0 0;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  width: 44px;
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section form
+// --------------------------------------------------
+form { position: relative; }
+
+input { 
+  border-radius: 3px;
+  display: block; 
+  font: .875em "Open Sans", sans-serif; // 14px / 16px
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+label { 
+  position: absolute;
+  left: -9999em;
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section header
+// --------------------------------------------------
+article header,
+section header {
+  color: $white;
+  line-height: 1.2;
+  margin-bottom: 50px;
+
+  h2 { text-transform: capitalize; }
+  
+  p { 
+    color: $white;
+    font-size: 1.25em; // 20px / 16px
+    font-weight: 300;
+  } 
+  
+  hr {
+    background-color: $white;
+    border: none;
+    height: 5px;
+    margin: auto;
+    margin-top: 15px;
+    width: 47px;
+  }
+}
+// --------------------------------------------------
+
+// --------------------------------------------------
+// @section box
+// --------------------------------------------------
+.box {
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px $gray;
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section arrow up box
+// --------------------------------------------------
+.arrow-up-box {
+  background-color: $white;
+  border-radius: 3px;
+  position: relative;
+
+  &:before {
+    bottom: 100%;
+
+    border: {
+      color: $white transparent;
+      style: solid;
+      width: 0 30px 35px;
+    }
+
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    width: 0;
+  }
+}
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section helpers
+// --------------------------------------------------
+
+// floats
+.fl-r { float: right; }
+.fl-l { float: left; }
+
+// margins
+.margin-r-0 { margin-right: 0 !important; }
+
+// list style
+.list-st-n { list-style-type: none; }
+
+// line height
+.line-height-0 { line-height: 0 !important; }
+// --------------------------------------------------
