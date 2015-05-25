@@ -2,7 +2,7 @@
 
 #####Version: 1.0 | IE8+
 
-#####Coded by: [Jorge Arimitsu](jorgearimitsu.github.io)
+#####Coded by: [Jorge Arimitsu](http://jorgearimitsu.github.io)
 
 #####Design by: [Akhil VR](http://www.cssauthor.com/author/akhil-vr/)
 
