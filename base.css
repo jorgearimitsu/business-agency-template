@@ -10,11 +10,6 @@
   margin: 0;
   padding: 0; }
 
-/*
-*  This file is licensed under the 
-*  Creative Creative Commons Attribution 4.0 License 
-*  http://creativecommons.org/licenses/by/4.0/
-*/
 body {
   min-width: 1024px; }
 
@@ -174,11 +169,6 @@ section header {
 .line-height-0 {
   line-height: 0 !important; }
 
-/*
-*  This file is licensed under the 
-*  Creative Creative Commons Attribution 4.0 License 
-*  http://creativecommons.org/licenses/by/4.0/
-*/
 header[role=banner] {
   text-align: right; }
   header[role=banner] .container {
